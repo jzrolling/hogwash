@@ -1,4 +1,4 @@
-# EDITED PACKAGE
+# Edited package
 Edited branch of katiesaund/hogwash with more extensive logging features to easy validation.
 THIS IS EXPERIMENTAL CODE. USE AT YOUR OWN RISK. 
 
