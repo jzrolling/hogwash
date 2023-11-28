@@ -77,7 +77,6 @@ convert_matrix_to_vector <- function(mat){
 #' @noRd
 prepare_phenotype <- function(pheno, disc_cont, tr){
   # Check input ----------------------------------------------------------------
-  print(paste("[EDIT] prepare_phenotype: phenotype matrix has ", nrow(pheno), " rows and ", ncol(pheno) ," columns "))
   check_for_root_and_bootstrap(tr)
   check_dimensions(pheno,
                    exact_rows = ape::Ntip(tr),
