@@ -13,16 +13,20 @@ select_test_type <- function(args){
   # Function -------------------------------------------------------------------
   if (args$discrete_or_continuous == "continuous") {
     run_continuous(args)
+    cat("[EDIT] Starting continuous test...")
   } else {
     if (args$test == "both") {
       run_synchronous(args)
       run_phyc(args)
+      cat("[EDIT] Starting synchronous test...")
+      cat("[EDIT] Starting phyc test...")
     }
     else if (args$test == "phyc") {
       run_phyc(args)
     }
     else if (args$test == "synchronous") {
       run_synchronous(args)
+      cat("[EDIT] Starting synchronous test...")
     }
   }
 }
