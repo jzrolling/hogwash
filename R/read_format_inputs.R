@@ -47,6 +47,12 @@ check_input_format <- function(pheno,
                                tr_type,
                                strain_key){
   # Check input ----------------------------------------------------------------
+
+  #edit
+  print(paste("[EDIT]: phenotype matrix has ", nrow(pheno), " rows and ", ncol(pheno) ," columns "))
+  print(paste("[EDIT]: genotype matrix has ", nrow(geno), " rows and ", ncol(geno) ," columns "))
+  #end edit
+  
   check_dimensions(geno, ape::Ntip(tr), 2, NULL, 2)
   check_dimensions(pheno, ape::Ntip(tr), 2, 1, 1)
   check_rownames(geno, tr)
